@@ -1,0 +1,49 @@
+.main-container{
+    width: 100%;
+    min-height: 91vh;
+    padding: 60% 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.main-container h1{
+    inline-size: 80%;
+    overflow-wrap: break-word;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.background-balls div{
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+ }
+  
+  .ball1{
+    width: 100px;
+    height: 100px;
+    background-color: var(--circle1);
+
+   
+    bottom:3%;
+    left: 3%;
+  }
+  
+  .ball2{
+    width: 100px;
+    height: 100px;
+    background-color: var(--circle2_3);
+
+    top:5%;
+    left: 20%;
+  }
+
+  .ball3{
+    width: 150px;
+    height: 150px;
+    background-color: var(--circle2_3);
+
+    bottom:-10%;
+    right: -10%;
+  }
