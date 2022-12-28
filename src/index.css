@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --generalBackground: #2F303A;
+  --formBck: #202027;
+  --navHover: #202027;
+  --borderInput: #2E3852;
+  --borderInputFocus: #596da0;
+  --buttonBck: #1762A7;
+  --buttonHover: #2180d8;
+  --buttonFocus: #2796ff;
+  --accentText: #2796ff;
+  --circle1: #bc3a801a;
+  --circle2_3: #3457b21a;
+  --font: 'Poppins', sans-serif;
+  --bs-body-color:white;
+}
+
+body{
+  font-family: var(--font);
+}
+
+.background{
+  background-color: var(--generalBackground);
+}
