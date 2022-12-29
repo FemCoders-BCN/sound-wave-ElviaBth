@@ -1,0 +1,53 @@
+.discover{
+    width: 100%;
+    height:calc(100vh - 61.8px - 48px);
+    padding: 10% 2rem 0
+}
+
+.discover h2{
+    /* inline-size: 90%;
+    overflow-wrap: break-word; */
+    font-size: 2.2rem;
+}
+
+.discover figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.discover figure div{
+    width: 65px;
+    height: 65px;
+    background-color: var(--formBck) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover figure div img{
+    width: 40%;
+}
+
+.discover figure div span{
+    padding: 0.5rem 0.8rem 0;
+    font-size: 0.8rem;
+}
+
+.discover p{
+    font-size: 0.75rem;
+}
+
+.discover picture{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover picture img{
+    width: 70%;
+}
