@@ -8,7 +8,7 @@ function Main() {
     <div className='main-container'>
         <h3>Feel The Music</h3>
         <p>Stream over 20 thousand songs with one click</p>
-        <Button variant="primary">Join Now</Button>{' '}
+        <Button variant="primary" className='join-btn'>Join Now</Button>{' '}
         <div className='background-balls'>
           <div class="ball1"></div>
           <div class="ball2"></div>

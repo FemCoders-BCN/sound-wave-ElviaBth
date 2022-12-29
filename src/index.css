@@ -21,6 +21,17 @@
   --circle2_3: #3457b21a;
   --font: 'Poppins', sans-serif;
   --bs-body-color:white;
+  --time: 30s;
+  --bottom1: 3%;
+  --left1: 3%; 
+  --top2:5%;
+  --left2:20%;
+  --bottom3:-10%;
+  --right3:-10%;
+  --bottom11:-8%;
+  --left11:-5%;
+  --top22:-20%;
+  --left22:20%;
 }
 
 body{
