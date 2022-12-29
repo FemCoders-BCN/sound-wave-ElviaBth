@@ -1,5 +1,7 @@
 .join{
     padding: 0 2rem;
+    position: relative;
+   /*  overflow: hidden; */
 }
 
 .join h1{
@@ -12,3 +14,106 @@
 .join h1 span{
     color: var(--accentText);
 }
+
+.background-balls0 div{
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    animation-duration: var(--time);
+	  animation-iteration-count: infinite;
+ }
+  
+  .ball11{
+    width: 100px;
+    height: 100px;
+    background-color: var(--circle1);
+
+    animation-name: backgroundMovement11;
+  }
+  
+  .ball22{
+    width: 80px;
+    height: 80px;
+    background-color: var(--circle2_3);
+
+    animation-name:backgroundMovement22;
+  }
+  
+  @keyframes backgroundMovement11 {
+    0% {
+      bottom: var(--bottom11);
+      left: var(--left11);
+    }
+    
+    20% {
+      bottom: calc(var(--bottom11) + 5px);
+      left: calc(var(--left11) - 15px);
+    }
+    
+    40% {
+      bottom: calc(var(--bottom11) - 20px);
+      left: calc(var(--left11) + 10px);
+    }
+    
+    60% {
+      bottom: calc(var(--bottom11) - 2px);
+      left: calc(var(--left11) - 1px);
+    }
+   
+    80% {
+      bottom: calc(var(--bottom11) - 20px);
+      left: calc(var(--left11) + 10px);
+    }
+   
+    100% {
+      bottom: calc(var(--bottom11));
+      left: calc(var(--left11));
+    }
+  }
+
+  @keyframes backgroundMovement22 {
+    20% {
+      top: var(--top22);
+      left: var(--left22);
+    }
+    30% {
+      top: calc(var(--top22) + 20px);
+      left: calc(var(--left22) - 10px);
+    }
+    40% {
+      top: calc(var(--top22) + 5px);
+      left: calc(var(--left22) - 15px);
+    }
+    50% {
+      top: calc(var(--top22) - 12px);
+      left: calc(var(--left22) + 5px);
+    }
+    60% {
+      top: calc(var(--top22) - 20px);
+      left: calc(var(--left22) + 10px);
+    }
+    70% {
+      top: calc(var(--top22) + 20px);
+      left: calc(var(--left22) - 5px);
+    }
+    80% {
+      top: calc(var(--top22) - 2px);
+      left: calc(var(--left22) - 1px);
+    }
+    90% {
+      top: calc(var(--top22) - 12px);
+      left: calc(var(--left22) + 5px);
+    }
+    100% {
+      top: calc(var(--top22) - 20px);
+      left: calc(var(--left22) + 10px);
+    }
+    0% {
+      top: calc(var(--top22) - 12px);
+      left: calc(var(--left22) + 5px);
+    }
+    10% {
+      top: calc(var(--top22));
+      left: calc(var(--left22));
+    }
+  }

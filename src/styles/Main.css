@@ -14,20 +14,24 @@
     font-weight: bold;
 }
 
+/* .join-btn:hover{
+  background-color: var(--buttonHover);
+} */
+
+
 .background-balls div{
     border-radius: 50%;
     z-index: 1;
     position: absolute;
+    animation-duration: var(--time);
+	  animation-iteration-count: infinite;
  }
   
   .ball1{
     width: 100px;
     height: 100px;
     background-color: var(--circle1);
-
-   
-    bottom:3%;
-    left: 3%;
+    animation-name: backgroundMovement1;
   }
   
   .ball2{
@@ -35,8 +39,7 @@
     height: 100px;
     background-color: var(--circle2_3);
 
-    top:5%;
-    left: 20%;
+    animation-name: backgroundMovement2;
   }
 
   .ball3{
@@ -44,6 +47,131 @@
     height: 150px;
     background-color: var(--circle2_3);
 
-    bottom:-10%;
-    right: -10%;
+    animation-name: backgroundMovement3;
+  }
+
+  @keyframes backgroundMovement1 {
+    0% {
+      bottom: var(--bottom1);
+      left: var(--left1);
+    }
+    
+    20% {
+      bottom: calc(var(--bottom1) + 5px);
+      left: calc(var(--left1) - 15px);
+    }
+    
+    40% {
+      bottom: calc(var(--bottom1) - 20px);
+      left: calc(var(--left1) + 10px);
+    }
+    
+    60% {
+      bottom: calc(var(--bottom1) - 2px);
+      left: calc(var(--left1) - 1px);
+    }
+   
+    80% {
+      bottom: calc(var(--bottom1) - 20px);
+      left: calc(var(--left1) + 10px);
+    }
+   
+    100% {
+      bottom: calc(var(--bottom1));
+      left: calc(var(--left1));
+    }
+  }
+
+  @keyframes backgroundMovement2 {
+    20% {
+      top: var(--top2);
+      left: var(--left2);
+    }
+    30% {
+      top: calc(var(--top2) + 20px);
+      left: calc(var(--left2) - 10px);
+    }
+    40% {
+      top: calc(var(--top2) + 5px);
+      left: calc(var(--left2) - 15px);
+    }
+    50% {
+      top: calc(var(--top2) - 12px);
+      left: calc(var(--left2) + 5px);
+    }
+    60% {
+      top: calc(var(--top2) - 20px);
+      left: calc(var(--left2) + 10px);
+    }
+    70% {
+      top: calc(var(--top2) + 20px);
+      left: calc(var(--left2) - 5px);
+    }
+    80% {
+      top: calc(var(--top2) - 2px);
+      left: calc(var(--left2) - 1px);
+    }
+    90% {
+      top: calc(var(--top2) - 12px);
+      left: calc(var(--left2) + 5px);
+    }
+    100% {
+      top: calc(var(--top2) - 20px);
+      left: calc(var(--left2) + 10px);
+    }
+    0% {
+      top: calc(var(--top2) - 12px);
+      left: calc(var(--left2) + 5px);
+    }
+    10% {
+      top: calc(var(--top2));
+      left: calc(var(--left2));
+    }
+  }
+
+  @keyframes backgroundMovement3 {
+    20% {
+      bottom: var(--bottom3);
+      right: var(--right3);
+    }
+    30% {
+      bottom: calc(var(--bottom3) + 20px);
+      right: calc(var(--right3) - 10px);
+    }
+    40% {
+      bottom: calc(var(--bottom3) + 5px);
+      right: calc(var(--right3) - 15px);
+    }
+    50% {
+      bottom: calc(var(--bottom3) - 12px);
+      right: calc(var(--right3) + 5px);
+    }
+    60% {
+      bottom: calc(var(--bottom3) - 20px);
+      right: calc(var(--right3) + 10px);
+    }
+    70% {
+      bottom: calc(var(--bottom3) + 20px);
+      right: calc(var(--right3) - 5px);
+    }
+    80% {
+      bottom: calc(var(--bottom3) - 2px);
+      right: calc(var(--right3) - 1px);
+    }
+    90% {
+      bottom: calc(var(--bottom3) - 12px);
+      right: calc(var(--right3) + 5px);
+    }
+    100% {
+      bottom: calc(var(--bottom3) - 20px);
+      right: calc(var(--right3) + 10px);
+    }
+    0% {
+      bottom: calc(var(--bottom3) - 12px);
+      right: calc(var(--right3) + 5px);
+    }
+    10% {
+      bottom: calc(var(--bottom3));
+      right: calc(var(--right3));
+    }
   }
