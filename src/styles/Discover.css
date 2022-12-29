@@ -49,3 +49,38 @@
 .discover picture img{
     width: 70%;
 }
+
+@media  screen and (min-width: 768px) { 
+    .discover{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       gap: 10px;
+       
+    }
+
+    .discover section{
+        width: 100%;
+        margin-left: 100px;
+        
+        
+    } 
+
+    .discover section h2{
+        font-size: 1.5rem;
+    }
+
+    .discover section p{
+        font-size: 0.55rem;
+    }
+
+    .discover picture{
+        display: flex;
+        justify-content: flex-start;
+    } 
+
+    .discover picture img{
+        width: 250px;
+        height: 250px;
+    }
+}

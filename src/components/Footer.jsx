@@ -6,10 +6,10 @@ import facebook from '../assets/images/facebook.svg'
 function Footer() {
   return (
     <ul className='footer'>
-      <li className='about-us'>About Us</li>
-      <li>Contact</li>
-      <li className='twitter'><img src={twitter} alt="Twitter logo" />Twitter</li>
-      <li className='facebook'><img src={facebook} alt="Facebook logo" />Facebook</li>
+      <li className='about-us li-alineation1'>About Us</li>
+      <li className='li-alineation1'>Contact</li>
+      <li className='twitter li-alineation2'><img src={twitter} alt="Twitter logo" />Twitter</li>
+      <li className='facebook li-alineation2'><img src={facebook} alt="Facebook logo" />Facebook</li>
     </ul>
   )
 }

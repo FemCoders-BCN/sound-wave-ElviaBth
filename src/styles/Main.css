@@ -7,16 +7,16 @@
 }
 
 
-.main-container h3{
+.main-container section h3{
     inline-size: 80%;
     overflow-wrap: break-word;
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-/* .join-btn:hover{
-  background-color: var(--buttonHover);
-} */
+.main-container picture img{
+  display: none;
+}
 
 
 .background-balls div{
@@ -173,5 +173,99 @@
     10% {
       bottom: calc(var(--bottom3));
       right: calc(var(--right3));
+    }
+  }
+
+
+ 
+ 
+  @media  screen and (min-width: 768px) { 
+    :root{
+      --bottom1: 5%;
+      --left1: 3%; 
+      --top2:5%;
+      --left2:20%;
+      --bottom3:-10%;
+      --right3:-10%;
+    }
+
+    .main-container{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        
+    }
+
+    .main-container picture{
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      z-index: 3;
+      
+    }
+
+    .main-container picture img{
+      display: flex;
+      width:271px;
+      height: 382px;
+    }
+
+    .main-container section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 36px;
+      z-index: 2;
+    }    
+
+    .main-container section h3{
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    .main-container section p{
+      inline-size: 300px;
+      overflow-wrap: break-word;
+      font-size: 0.9rem ;
+    }
+
+    .join-btn{
+      align-self: flex-start;
+    }
+
+    .join-btn:hover{
+      background-color: var(--buttonHover);
+    }
+    .join-btn:focus{
+      background-color: var(--buttonFocus);
+    }
+
+  .background-balls div{
+    z-index: 0;
+  }
+    
+  .ball1{
+      width: 260px;
+      height: 260px;
+      background-color: var(--circle1);
+      animation-name: backgroundMovement1;
+    }
+    
+    .ball2{
+      width: 260px;
+      height: 260px;
+      background-color: var(--circle2_3);
+  
+      animation-name: backgroundMovement2;
+    }
+  
+    .ball3{
+      width: 400px;
+      height: 400px;
+      background-color: var(--circle2_3);
+  
+      animation-name: backgroundMovement3;
     }
   }
