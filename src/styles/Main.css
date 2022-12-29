@@ -1,7 +1,7 @@
 .main-container{
     width: 100%;
-    min-height: 91vh;
-    padding: 60% 2rem 0;
+    height:calc(100vh - 61.8px);
+    padding: 50% 2rem 0;
     position: relative;
     overflow: hidden;
 }

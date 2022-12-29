@@ -1,0 +1,27 @@
+.footer{
+    background-color: var(--formBck);
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.footer li img{
+    width: 30%;
+}
+
+.footer li.about-us, .footer li.twitter{
+    inline-size: 4rem;
+    overflow-wrap: break-word;
+
+}
+
+.footer li.facebook{
+    inline-size: 5rem;
+    overflow-wrap: break-word;
+}
