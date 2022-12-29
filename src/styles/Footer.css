@@ -25,3 +25,8 @@
     inline-size: 5rem;
     overflow-wrap: break-word;
 }
+
+@media  screen and (min-width: 768px) { 
+   
+
+}
