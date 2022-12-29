@@ -6,7 +6,7 @@ import '../styles/Main.css'
 function Main() {
   return (
     <div className='main-container'>
-        <h1>Feel The Music</h1>
+        <h3>Feel The Music</h3>
         <p>Stream over 20 thousand songs with one click</p>
         <Button variant="primary">Join Now</Button>{' '}
         <div className='background-balls'>

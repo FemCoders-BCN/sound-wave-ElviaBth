@@ -16,7 +16,7 @@
   --buttonBck: #1762A7;
   --buttonHover: #2180d8;
   --buttonFocus: #2796ff;
-  --accentText: #2796ff;
+  --accentText: #FF358F;
   --circle1: #bc3a801a;
   --circle2_3: #3457b21a;
   --font: 'Poppins', sans-serif;
@@ -34,4 +34,8 @@ body{
 a{
   text-decoration: none;
   color: var(--bs-body-color);
+}
+.main-size{
+  width: 100%;
+  height:calc(100vh - 61.8px - 48px);
 }
