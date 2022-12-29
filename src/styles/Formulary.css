@@ -1,0 +1,22 @@
+.formulary{
+    background-color: var(--formBck);
+    border-radius: 15px;
+    padding:1rem 2rem;
+    margin:1rem 0 1rem 0;
+}
+
+label.form-label{
+    font-size: 0.8rem;
+}
+
+.form-control{
+    background-color: var(--formBck)!important;
+    border: 1px solid var(--borderInput)!important;
+    font-size: 0.8rem!important;
+    color: var( --bs-body-color)!important;
+}
+
+button.btn.btn-primary.btn-sm{
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+}

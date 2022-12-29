@@ -1,0 +1,14 @@
+.join{
+    padding: 0 2rem;
+}
+
+.join h1{
+    font-weight: bolder;
+    inline-size: 70%;
+    overflow-wrap: break-word;
+    font-size: 2.5rem;
+}
+
+.join h1 span{
+    color: var(--accentText);
+}

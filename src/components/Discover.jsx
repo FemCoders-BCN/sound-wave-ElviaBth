@@ -7,7 +7,7 @@ import '../styles/Discover.css'
 
 function Discover() {
   return (
-    <div className='discover'>
+    <div className='discover main-size'>
         <h2>Discover new music</h2>
         <figure>
             <div><img src={microphone} alt="Microphone icon" /><span>Charts</span></div>

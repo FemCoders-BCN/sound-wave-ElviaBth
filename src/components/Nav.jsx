@@ -5,8 +5,8 @@ import '../styles/Nav.css'
 function Nav() {
   return (
     <ul className='nav'> 
-        <li><Link to={'/secondpage'}>Discover</Link></li>
-        <li>Join</li>
+        <li><Link to={'/discover'}>Discover</Link></li>
+        <li><Link to={'/join'}>Join</Link></li>
     </ul>
   )
 }
