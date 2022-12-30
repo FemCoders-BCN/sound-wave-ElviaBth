@@ -21,7 +21,7 @@ function Formulary() {
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit} className='formulary'>
       <Row className="mb-3">
-        <Form.Group as={Col} md="4" controlId="validationCustom01">
+        <Form.Group as={Col}  controlId="validationCustom01">
           <Form.Label>Name:</Form.Label>
           <Form.Control
             required
@@ -36,7 +36,7 @@ function Formulary() {
         </Form.Group>
       </Row>
       <Row className="mb-3">
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+      <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Email:</Form.Label>
         <Form.Control 
         required
@@ -49,7 +49,7 @@ function Formulary() {
         </Form.Group>
         </Row>
         <Row className="mb-3">
-        <Form.Group as={Col} md="3" controlId="validationCustom05">
+        <Form.Group as={Col}  controlId="validationCustom05">
           <Form.Label>Password:</Form.Label>
           <Form.Control 
           type="password" 

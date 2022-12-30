@@ -1,3 +1,4 @@
+
 .main-container{
   width: 100%;
     height:calc(100vh - 61.8px);
@@ -180,13 +181,13 @@
  
  
   @media  screen and (min-width: 768px) { 
-    :root{
-      --bottom1: 5%;
-      --left1: 3%; 
+    body{
+      --bottom1: 20%;
+      --left1: 5%; 
       --top2:5%;
-      --left2:20%;
-      --bottom3:-10%;
-      --right3:-10%;
+      --left2:30%;
+      --bottom3:-30%;
+      --right3:-20%;
     }
 
     .main-container{
