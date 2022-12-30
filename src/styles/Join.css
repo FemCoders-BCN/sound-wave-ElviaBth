@@ -117,3 +117,45 @@
       left: calc(var(--left22));
     }
   }
+
+  @media  screen and (min-width: 768px) {
+    body {
+      --bottom11:-15%;
+      --left11:-8%;
+      --top22:-40%;
+      --left22:20%; 
+    }
+
+    .join{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .join h1{
+      margin-top: 20%;
+      align-self: center;
+      justify-self: flex-end;
+    }
+
+   .formulary{
+    width: 85%;
+      align-self: flex-end;
+      justify-self: flex-start;
+      margin-right: 100px;
+    }
+    .ball11{
+      width: 350px;
+      height: 350px;
+      background-color: var(--circle1);
+  
+      animation-name: backgroundMovement11;
+    }
+    
+    .ball22{
+      width: 300px;
+      height: 300px;
+      background-color: var(--circle2_3);
+  
+      animation-name:backgroundMovement22;
+    }
+  } 
