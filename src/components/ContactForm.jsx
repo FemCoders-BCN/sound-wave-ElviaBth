@@ -3,9 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import '../styles/Formulary.css';
+import '../styles/ContactForm.css';
 
-function Formulary() {
+function ContactForm() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -73,4 +73,4 @@ function Formulary() {
   );
 }
 
-export default Formulary
+export default ContactForm
