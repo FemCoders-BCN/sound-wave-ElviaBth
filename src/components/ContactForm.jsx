@@ -3,31 +3,60 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import '../styles/Formulary.css';
+import '../styles/ContactForm.css';
 
-function Formulary() {
+function ContactForm() {
+  const [values, setValues] = useState({
+    userName: "",
+    email: "",
+    password: "",
+  });
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
     setValidated(true);
+    if (form.checkValidity() === false) {
+      event.stopPropagation();
+      return;
+    }
+    console.table(values);
+    setTimeout(() => {
+      setValidated(false);
+      setValues({
+        userName: "",
+        email: "",
+        password: ""
+      })
+    }, 2000);
   };
+
+  function handleChange(event) {
+    const { target } = event;
+    const { name, value } = target;
+
+    const newValues = {
+      ...values,
+      [name]: value,
+    };
+    setValues(newValues);
+  }
 
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit} className='formulary'>
       <Row className="mb-3">
-        <Form.Group as={Col}  controlId="validationCustom01">
-          <Form.Label>Name:</Form.Label>
+        <Form.Group as={Col}>
+          <Form.Label htmlFor='userName'>Name:</Form.Label>
           <Form.Control
             required
+            id='userName'
+            name= "userName"
             type="text"
             autoFocus
             tabIndex="1"
+            value={values.userName}
+            onChange={handleChange}
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
@@ -36,12 +65,16 @@ function Formulary() {
         </Form.Group>
       </Row>
       <Row className="mb-3">
-      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Email:</Form.Label>
+      <Form.Group>
+        <Form.Label htmlFor='email'>Email:</Form.Label>
         <Form.Control 
         required
+        id='email'
+        name='email'
         type="email" 
         tabIndex="2"
+        value={values.email}
+        onChange={handleChange}
         />
           <Form.Control.Feedback type="invalid">
             Please provide a valid email address.
@@ -49,14 +82,18 @@ function Formulary() {
         </Form.Group>
         </Row>
         <Row className="mb-3">
-        <Form.Group as={Col}  controlId="validationCustom05">
-          <Form.Label>Password:</Form.Label>
+        <Form.Group as={Col}>
+          <Form.Label htmlFor='password'>Password:</Form.Label>
           <Form.Control 
+          id='password'
+          name='password'
           type="password" 
-          minLength="8" 
-          maxLength="15"
+          minLength="2" 
+          maxLength="6"
           required 
           tabIndex="3"
+          value={values.password}
+          onChange={handleChange}
           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid password.
@@ -73,4 +110,4 @@ function Formulary() {
   );
 }
 
-export default Formulary
+export default ContactForm
