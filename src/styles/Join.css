@@ -1,7 +1,7 @@
 .join{
     padding: 0 2rem;
     position: relative;
-   /*  overflow: hidden; */
+   overflow: hidden;
 }
 
 .join h1{

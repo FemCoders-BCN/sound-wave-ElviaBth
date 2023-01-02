@@ -16,9 +16,9 @@ function Main() {
           <p>Stream over 20 thousand songs with one click</p>
           <Button variant="primary" className='join-btn'><Link to={'/join'}>Join Now</Link></Button>{' '}
           <div className='background-balls'>
-            <div class="ball1"></div>
-            <div class="ball2"></div>
-            <div class="ball3"></div>
+            <div className="ball1"></div>
+            <div className="ball2"></div>
+            <div className="ball3"></div>
           </div>
         </section>
     </div>

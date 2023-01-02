@@ -8,8 +8,8 @@ function Join() {
       <h1>Join the <span>fun.</span></h1>
       <ContactForm/>
       <div className='background-balls0'>
-          <div class="ball11"></div>
-          <div class="ball22"></div>
+          <div className="ball11"></div>
+          <div className="ball22"></div>
       </div>
     </div>
   )
